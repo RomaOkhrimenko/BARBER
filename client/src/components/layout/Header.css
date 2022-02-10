@@ -1,0 +1,140 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-left {
+    margin: 20px;
+}
+
+.header-left > img {
+    max-width: 100px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    color: #d5a353;
+}
+
+.header-right > div {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+    color: #d5a353;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+.header-right > div > span {
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    font-size: 14px;
+    border: 1px solid #d5a353;
+    border-radius: 50%;
+    padding: 3px 6px;
+    background-color: #151515;
+}
+
+.header-right > svg {
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+.header-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10000;
+    transform: translateX(20vw);
+    transition: all .3s;
+}
+
+.header-nav.active {
+    transform: translateX(0);
+    transition: all .3s;
+}
+
+.header-nav > svg {
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.header-nav > ul {
+    list-style: none;
+    color: #98712f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.header-nav > ul > li {
+    padding: 15px 0;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.header-nav > ul > li:hover {
+    color: #7c5b2c;
+}
+
+.header-nav > ul > li:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #d5a353;
+    position: absolute;
+    top: 43%;
+    left: -15px;
+}
+
+.header-nav > ul > li:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #d5a353;
+    position: absolute;
+    top: 43%;
+    right: -15px;
+}
+
+@media(max-width: 994px) {
+    .header-nav {
+        width: 40vw;
+        transform: translateX(40vw);
+    }
+}
+
+@media (max-width: 554px) {
+    .header-right {
+        padding-right: 10px;
+    }
+
+    .header-right > div {
+        margin: 0 10px;
+    }
+
+    .header-nav {
+        width: 60vw;
+        transform: translateX(60vw);
+    }
+}
+

@@ -1,0 +1,105 @@
+.productDetails {
+    max-width: 1200px;
+    margin: 100px auto 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.productDetails > img {
+    width: 400px;
+    height: 400px;
+}
+
+.productDetails-info {
+    margin: 0px 15px;
+}
+
+.productDetails-info > h2 {
+    font-family: "Teko";
+    font-size: 45px;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+
+.productDetails-info > span {
+    color: #d5a353;
+    font-family: "IBM Plex Serif";
+}
+
+.productDetails-info > p {
+    margin-top: 15px;
+    font-family: "Roboto Thin";
+    font-size: .8em;
+    margin-bottom: 15px;
+}
+
+.productDetails-info > button {
+    margin-top: 15px;
+    padding: .8em 2em;
+    background-color: #d5a353;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #151515;
+    font-family: 'Teko';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.productDetails-phone {
+    display: none;
+}
+
+@media (max-width: 757px) {
+
+    .productDetails-phone {
+        margin: 70px 0px;
+        padding: 0 10px;
+    }
+    .productDetails {
+        display: none;
+    }
+
+    .productDetails-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .productDetails-phone > h2 {
+        text-align: center;
+    }
+
+    .productDetails-phone > img {
+        max-width: 478px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productDetails-phone > span {
+        text-align: left;
+        margin: 10px 0;
+        color: #d5a353;
+    }
+
+    .productDetails-phone > p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .productDetails-phone > button {
+        background: #d5a353;
+        color: #ffffff;
+        border: 1px solid #98712f;
+        padding: 10px;
+        border-radius: 4px;
+    }
+}
+@media (max-width: 478px) {
+    .productDetails-phone > img {
+        max-width: 278px;
+        display: flex;
+        justify-content: center;
+    }
+}

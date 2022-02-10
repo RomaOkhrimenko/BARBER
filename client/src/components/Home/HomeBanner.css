@@ -1,0 +1,222 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../../image/banner_home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.banner > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.banner-info  {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 6vmax;
+    flex-direction: column;
+}
+
+.banner-info > img {
+    margin-bottom: 30px;
+}
+
+.banner-info > p {
+    text-align: center;
+    max-width: 320px;
+    color: #e5e5e5;
+    font: 400 20px "IBM Plex Serif";
+    font-style: italic;
+}
+
+.banner-info > a {
+    margin-top: 20px;
+    padding: 20px 60px;
+    background-color: #d5a353;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #151515;
+    font-family: 'Teko';
+    font-weight: 600;
+    font-size: .89em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.banner-info > a:hover {
+    background-color: #98712f;
+}
+
+.banner-bottom {
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.banner-bottom-address {
+    width: 32.333333%;
+}
+
+.banner-bottom-phone{
+    width: 32.333333%;
+}
+
+.banner-bottom-hours {
+    width: 32.333333%;
+}
+
+.banner-bottom-address > div,
+.banner-bottom-phone > div,
+.banner-bottom-hours > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.banner-bottom-address > div:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    height: 100px;
+    width: 1px;
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.banner-bottom-hours > div:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 100px;
+    width: 1px;
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.banner-bottom-address > div > h4 {
+    font-size: 1em;
+    color: #d5a353;
+}
+
+.banner-bottom-address > div > span {
+    font-size: 0.7em;
+    max-width: 200px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.banner-bottom-phone > div > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4em;
+    margin: 4px 0px;
+}
+
+.banner-bottom-phone > div > h4 {
+    font-size: 1em;
+    color: #d5a353;
+}
+
+.banner-bottom-hours > div > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-bottom-hours > div > h4 {
+    font-size: 1em;
+    color: #d5a353;
+}
+
+.banner-bottom-hours > div > ul > li {
+    color: #ffffff;
+    font-size: .7em;
+    padding: 2px 0px;
+}
+
+@media(max-width: 994px) {
+    .banner-info > img {
+        max-width: 230px;
+    }
+
+    .banner-info > p {
+        max-width: 250px;
+        font: 400 15px "IBM Plex Serif";
+    }
+
+    .banner-info > button {
+        padding: 15px 40px;
+        font-size: 15px;
+    }
+
+    .banner-bottom-address > div > h4,
+    .banner-bottom-hours > div > h4,
+    .banner-bottom-phone > div > h4{
+        font-size: .7em;
+    }
+
+    .banner-bottom-address > div > span {
+        font-size: .5em;
+    }
+
+    .banner-bottom-phone > div > a {
+        font-size: .9em;
+    }
+
+    .banner-bottom-hours > div > ul > li {
+        font-size: .5em;
+    }
+}
+
+@media(max-width: 554px) {
+    .banner-info > img {
+        max-width: 200px;
+    }
+
+    .banner-info > p {
+        max-width: 230px;
+        font: 400 13px "IBM Plex Serif";
+    }
+
+    .banner-info > button {
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+
+    .banner-bottom-address > div > h4,
+    .banner-bottom-hours > div > h4,
+    .banner-bottom-phone > div > h4{
+        font-size: .5em;
+    }
+
+    .banner-bottom-address > div > span {
+        font-size: .4em;
+    }
+
+    .banner-bottom-phone > div > a {
+        font-size: .7em;
+    }
+
+    .banner-bottom-hours > div > ul > li {
+        font-size: .4em;
+    }
+}

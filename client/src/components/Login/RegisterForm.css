@@ -1,0 +1,99 @@
+.loginForm-register {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+}
+
+.loginForm-register-image {
+    width: 50%;
+    height: 100%;
+    transform: translateY(700px);
+    transition: all .3s
+}
+
+.loginForm-register-image.active {
+    transform: translateY(0px);
+}
+
+.loginForm-register-log-con {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transform: translateY(-700px);
+    transition: all .3s;
+}
+
+.loginForm-register-log-con.active {
+    transform: translateY(0px);
+}
+
+.loginForm-register-log-con > h2 {
+    text-align: center;
+    margin: 20px;
+    color: #151515;
+    font-family: "IBM Plex Serif";
+}
+
+.loginForm-register-log-con > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin: 0px 40px;
+}
+
+.loginForm-register-log-con > form > input[type=text] {
+    background: none;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d5a353;
+    margin: 15px 5px;
+    font-family: "IBM Plex Serif";
+    padding: 5px;
+}
+
+.loginForm-register-log-con > form > span {
+    text-align: right;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.loginForm-register-log-con > form > span:hover {
+    color: #d5a353;
+}
+
+.loginForm-register-log-con > form > input[type=submit] {
+    padding: 10px 15px;
+    margin-top: 30px;
+    background-color: #d5a353;
+    border: none;
+    outline: none;
+    border: 1px solid #d5a353;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #151515;
+    font-family: "Roboto Thin";
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.loginForm-register-log-con > form > input[type=submit]:hover {
+    box-shadow: 0px 0px 6px #151515;
+}
+
+@media(max-width: 994px) {
+    .loginForm-register-image {
+        display: none;
+    }
+
+    .loginForm-register-log-con {
+        width: 100%;
+    }
+}

@@ -1,0 +1,196 @@
+.homeService-about {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.homeService-about-row {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.homeService-about-img {
+    background-image: url("../../image/bg_home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+
+.homeService-about-col {
+    width: 50%;
+    margin-bottom: 5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.homeService-about-col > div {
+    max-width: 600px;
+}
+
+.homeService-about-col > div > h2 {
+    margin-bottom: 2vmax;
+    color: #191514;
+    font-size: 2.4em;
+    font-family: "Teko";
+    font-weight: 500;
+}
+
+.homeService-about-col > div > span {
+    color: #d5a353;
+    font: 400 .9em "IBM Plex Serif";
+    font-style: italic;
+}
+
+.homeService-about-col > div > p {
+    margin-top: 1.5vmax;
+    font: 400 .8em "IBM Plex Serif";
+    color: #42403f;
+}
+
+.homeService-about-col > div > button {
+    padding: 20px 50px;
+    background-color: #d5a353;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #151515;
+    font-family: 'Teko';
+    font-weight: 600;
+    font-size: .89em;
+    margin-top: 1.5vmax;
+}
+
+.homeService-about-img-vitaliy {
+    background-image: url("../../image/barber-banner.jpg");
+}
+.homeService-about-img-price {
+    background-image: url("../../image/bg_prices.jpg");
+}
+
+.homeService-about-col-price {
+    width: 50%;
+    margin-bottom: 5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.homeService-about-col-price > div {
+    max-width: 600px;
+    margin: 0px 20px;
+}
+
+.homeService-about-col-price > div > h2 {
+    margin-bottom: 1.3vmax;
+    color: #191514;
+    font-size: 2.4em;
+    font-family: "Teko";
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.homeService-about-col-price > div > img {
+    margin: 20px 0;
+}
+
+.homeService-about-col-price > div > p {
+    font-size: 16px;
+    font-family: "IBM Plex Serif";
+}
+
+.homeService-about-col-price > div > ul {
+    list-style: none;
+    margin: 30px 0;
+}
+
+.homeService-about-col-price > div > ul > li:first-child {
+    border-top: 1px solid #e0ddd9;
+    padding-top: 20px;
+}
+
+.homeService-about-col-price > div > ul > li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-bottom: 1px solid #e0ddd9;
+    padding-bottom: 20px;
+}
+
+.homeService-about-col-price > div > ul > li > span:first-child {
+    font-family: "Teko";
+}
+
+.homeService-about-col-price > div > ul > li > span:last-child {
+    font-family: "Teko";
+    color: #d5a353;
+}
+
+@media(max-width: 994px) {
+    .homeService-about-col > div > h2,
+    .homeService-about-col-price > div > h2{
+        font-size: 1.7em;
+    }
+    .homeService-about-col > div > span {
+        font: 400 .6em "IBM Plex Serif";
+    }
+
+    .homeService-about-col > div > p {
+        font: 400 0.6em "IBM Plex Serif";
+    }
+
+    .homeService-about-col > div > button {
+        padding: 10px 30px;
+        background-color: #d5a353;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: #151515;
+        font-family: 'Teko';
+        font-weight: 600;
+        font-size: 15px;
+        margin-top: 1.5vmax;
+    }
+}
+
+@media(max-width: 754px) {
+    .homeService-about {
+        min-height: 100vh;
+    }
+    .homeService-about-row,
+    .homeService-about{
+        flex-direction: column;
+    }
+
+    .homeService-about-img {
+        width: 100%;
+    }
+
+    .homeService-about-col,
+    .homeService-about-col-price {
+        width: 100%;
+    }
+
+    .homeService-about-col-price > div > h2 {
+        line-height: normal;
+    }
+
+}
+
+

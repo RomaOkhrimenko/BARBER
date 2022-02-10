@@ -1,0 +1,215 @@
+.header-top {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../image/top_img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-top > h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "IBM Plex Serif";
+}
+
+.header-top > div {
+    color: #a1a1a1;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.header-top > div > span {
+    margin: 10px;
+    font-size: 13px;
+    color: #a1a1a1;
+    cursor: pointer;
+    transition: all .3s;
+    font-family: "IBM Plex Serif";
+    font-style: italic;
+    font-weight: 300;
+}
+.header-top > div > span:hover {
+    color: #ffffff;
+}
+
+.product {
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    display: flex;
+    padding: 0 30px;
+}
+
+.productNav {
+    text-align: left;
+}
+
+.productNav > .category {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.productNav > .category > h4 {
+    font-size: 30px;
+    font-family: "Roboto Thin";
+}
+
+.productNav > .category > ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.productNav > .category > ul > li {
+    font-family: "IBM Plex Serif";
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s;
+}
+
+.productNav > .category > ul > li:before {
+    content: '';
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #d5a353;
+    left: -10px;
+    top: 50%;
+}
+
+.productNav > .category > ul > li:hover {
+    color: #d5a353;
+}
+
+.productNav > .search > h4 {
+    font-size: 30px;
+    font-family: "Roboto Thin";
+}
+
+.productNav > .search > div {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #d5a353;
+    border-radius: 40px;
+    margin-top: 15px;
+}
+
+.productNav > .search > div > input {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: "IBM Plex Serif";
+    font-style: italic;
+    padding: 0px 10px;
+    font-size: 15px;
+    max-width: 170px;
+}
+
+.productNav > .search > div > svg {
+    cursor: pointer;
+}
+
+.paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-item {
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    padding: 1vmax 1.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.page-item:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+    border-radius: 0 5px 5px 0;
+}
+.page-link {
+    text-decoration: none;
+    font: 300 0.7vmax "Roboto";
+    color: rgb(80, 80, 80);
+    transition: all 0.3s;
+}
+
+.page-item:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+    color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+    background-color: #d5a353;
+}
+
+.pageLinkActive {
+    color: white;
+}
+
+/* Hidden items */
+
+.category > img {
+    display: none;
+}
+
+@media(max-width: 994px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .productNav {
+        margin-bottom: 40px;
+    }
+
+    .productNav > .category {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .category > img {
+        display: block;
+        width: 15px;
+    }
+
+    .category > ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .category > ul > li {
+        padding: 0px 15px;
+    }
+
+    .productNav > .category > ul > li:before {
+        left: 4px;
+    }
+
+    .productNav > .search > div > input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,43 @@
+.homeShop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.homeShop-container {
+    text-align: center;
+}
+
+.homeShop-container > h2 {
+    font-size: 70px;
+    font-family: "Teko";
+    line-height: 35px;
+    font-weight: 500;
+}
+
+.homeShop-container > img {
+    margin: 1.5em 0;
+    font-size: 16px;
+}
+
+.product-container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.homeShop-container > button {
+    margin: 3em;
+    padding: .8em 2em;
+    background-color: #d5a353;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #151515;
+    font-family: 'Teko';
+    font-weight: 600;
+    font-size: 16px;
+}

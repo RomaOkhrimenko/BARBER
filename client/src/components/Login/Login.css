@@ -1,0 +1,38 @@
+.LogReg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../image/banner_home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginForm {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+@media(max-width: 994px) {
+    .loginForm {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+
+@media(max-width: 554px) {
+    .loginForm {
+        width: 300px;
+        margin-top: 60px;
+    }
+}
+
+
