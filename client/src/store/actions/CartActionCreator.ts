@@ -6,7 +6,7 @@ import {ICartProduct} from "../../models/IProduct";
 
 
 export const addItemsToCart = (id: string) => async(dispatch: AppDispatch, getState: any) => {
-   const {data} = await axios.get(`${BASE_URL}/products/${id}`)
+   const {data} = await axios.get(`/barber/products/${id}`)
 
     dispatch(cartSlice.actions.addToCart({
         product: data.product._id,

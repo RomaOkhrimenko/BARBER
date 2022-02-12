@@ -9,9 +9,9 @@ export const fetchProduct = (keyword = '', category?: any, currentPage = 1) => a
     try {
         dispatch(productSlice.actions.productFetching())
 
-        let link =`http://localhost:4000/barber/products?keyword=${keyword}&page=${currentPage}`
+        let link =`/barber/products?keyword=${keyword}&page=${currentPage}`
         if(category) {
-            link = `http://localhost:4000/barber/products?keyword=${keyword}&category=${category}&page=${currentPage}`
+            link = `/barber/products?keyword=${keyword}&category=${category}&page=${currentPage}`
         }
 
         await axios.get(link)
@@ -25,7 +25,7 @@ export const fetchProductDetails = (id:string | undefined) => async (dispatch: A
     try {
         dispatch(ProductDetailsSlice.actions.productDetailsRequest())
 
-        await axios.get(`http://localhost:4000/barber/products/${id}`)
+        await axios.get(`/barber/products/${id}`)
             .then(res => dispatch(ProductDetailsSlice.actions.productDetailsSuccess(res.data.product)))
     }catch (error:any) {
         dispatch(ProductDetailsSlice.actions.productDetailsError(error.message))

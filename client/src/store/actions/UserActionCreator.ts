@@ -41,7 +41,7 @@ export const LogoutUser = () => async (dispatch: AppDispatch) => {
 export const checkAuth = () => async(dispatch: AppDispatch) => {
     try {
         dispatch(UserSlice.actions.loginRequest())
-       const response = await axios.get<AuthResponse>(`http://localhost:4000/barber/refresh`, {withCredentials: true})
+       const response = await axios.get<AuthResponse>(`/barber/refresh`, {withCredentials: true})
         localStorage.setItem('token', response.data.accessToken)
         dispatch(UserSlice.actions.loginSuccess(response.data.user))
     }catch (error:any) {
