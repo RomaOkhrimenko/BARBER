@@ -1,4 +1,3 @@
-require('dotenv').config()
 const app = require('./app')
 const connectDatabase = require('./config/database')
 
@@ -12,6 +11,10 @@ process.on('uncaughtException', (err) => {
 connectDatabase()
 
 const PORT = process.env.PORT || 4000
+
+if(process.env.NODE_ENV !== "PRODUCTION") {
+    require('dotenv').config({path: "server/.env"})
+}
 
 const server = app.listen(PORT, () => {
     console.log(`Server is working on http://localhost:${PORT}`)
